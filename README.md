@@ -1,5 +1,5 @@
-
-Weekend Project - 1
+**
+Weekend Project - 1**
 
 •	Form groups of 3 to 5 students
 
@@ -37,7 +37,7 @@ Scripts
 
 How to use
 
-Deploy
+**Deploy**
 
 script: 1_deploy.ts {list_of_proposals}
 yarn ts-node --files scripts\Ballot\1_deploy.ts Proposal_1 Proposal_2
@@ -47,7 +47,7 @@ yarn ts-node --files scripts\Ballot\1_deploy.ts Proposal_1 Proposal_2
 
 Contract deployed at 0xEa23cfe91Ff470096238bC68939f380dC9e6b62F
 
-Query Proposals
+**Query Proposals**
 
 script: 2_quey_proposals.ts {address_contract_ballot} {index_proposal}
 yarn ts-node --files scripts\Ballot\2_quey_proposals.ts 0x15a5076D0e42eb7F3C2a6d0f510cb5ff41897c9a 1 ts-node --files scripts\Ballot\2_quey_proposals.ts 0xEa23cfe91Ff470096238bC68939f380dC9e6b62F 1
@@ -56,16 +56,16 @@ yarn ts-node --files scripts\Ballot\2_quey_proposals.ts 0x15a5076D0e42eb7F3C2a6d
 
 Attaching ballot contract interface to address 0xEa23cfe91Ff470096238bC68939f380dC9e6b62F
 
-Give vote right passing an address as input
+**Give vote right passing an address as input**
 
 script: 3_give_vote_rights.ts {address_contract_ballot} {address_to_give_rights}
 ts-node --files scripts\Ballot\3_give_vote_rights.ts  0xEa23cfe91Ff470096238bC68939f380dC9e6b62F 0xe328a3D1bC7C20AA851Bc85897262bD37364a7D4
  
 
 Transaction completed. Hash: 0x02d70bc03f1066d15074dad8a118416fec71a132d4b0430135231fc7eb409402
-
-Cast a vote to a ballot passing contract address and proposal as input and using the wallet in environment
-
+** 
+**Cast a vote to a ballot passing contract address and proposal as input and using the wallet in environment**
+**
 script: 4_cast_vote.ts {address_contract_ballot} {index_proposal}
 
 ts-node --files scripts\Ballot\4_cast_vote.ts 0xEa23cfe91Ff470096238bC68939f380dC9e6b62F 0
@@ -76,7 +76,7 @@ ts-node --files scripts\Ballot\4_cast_vote.ts 0xEa23cfe91Ff470096238bC68939f380d
  
 Transaction completed. Hash: 0x26ebe8d5ad504ce4c16667691238fd1eec814c5393fc88390e084d2662f50675
 
-Delegate my vote passing user address as input and using the wallet in environment
+**Delegate my vote passing user address as input and using the wallet in environment**
 
 script: 5_delegate_vote.ts {address_contract_ballot} {address_to_delegate}
 ts-node --files scripts\Ballot\5_delegate_vote.ts 0x56D21d44F1C4c1ae0a5FF5d589CC344292A1E9c2 0xdFB228Bc7e07ce5869e0339f4B67504fc79C573f

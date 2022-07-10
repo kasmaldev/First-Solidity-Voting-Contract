@@ -1,5 +1,5 @@
-**
-Weekend Project - 1**
+
+**Weekend Project - 1**
 
 •	Form groups of 3 to 5 students
 
@@ -63,9 +63,9 @@ ts-node --files scripts\Ballot\3_give_vote_rights.ts  0xEa23cfe91Ff470096238bC68
  
 
 Transaction completed. Hash: 0x02d70bc03f1066d15074dad8a118416fec71a132d4b0430135231fc7eb409402
-** 
+
 **Cast a vote to a ballot passing contract address and proposal as input and using the wallet in environment**
-**
+
 script: 4_cast_vote.ts {address_contract_ballot} {index_proposal}
 
 ts-node --files scripts\Ballot\4_cast_vote.ts 0xEa23cfe91Ff470096238bC68939f380dC9e6b62F 0
@@ -86,7 +86,7 @@ ts-node --files scripts\Ballot\5_delegate_vote.ts 0x56D21d44F1C4c1ae0a5FF5d589CC
 
 Transaction completed. Hash: 0x37b2409c53277d7b5d87c295825936e3a0bb3ff1f5efde81f47f24cb7c15061a
 
-Query voting result and print to console
+**Query voting result and print to console**
 
 script: 6_query_voting_results.ts {address_contract_ballot}
 
